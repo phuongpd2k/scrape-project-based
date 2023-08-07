@@ -3,7 +3,7 @@ const path = require('path');
 const enum_ = require('./enum');
 const dateTimeUtils = require('./common');
 
-const logsDir = path.join(__dirname, '../../logs');
+const logsDir = path.join(__dirname, '../logs');
 
 exports.success = (msg) => {
     writeLog(enum_.GREEN_LOG, 'SUCCESS', msg);
