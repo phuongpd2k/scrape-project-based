@@ -1,0 +1,9 @@
+const {createClient} = require('redis')
+const redisClient = createClient({
+    password: '5AVorlpJ9DQqYFHq7yRZL1rnQfdo8cgB',
+    socket: {
+        host: 'redis-14259.c1.asia-northeast1-1.gce.cloud.redislabs.com',
+        port: 14259
+    }
+});
+module.exports = redisClient;
